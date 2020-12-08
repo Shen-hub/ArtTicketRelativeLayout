@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AirTicket</string>
+    <string-array name="citiesOut">
+        <item>Иркутск</item>
+        <item>Улан-Удэ</item>
+        <item>Новособирск</item>
+    </string-array>
+    <string-array name="citiesIn">
+        <item>Москва</item>
+        <item>Сочи</item>
+        <item>Бодайбо</item>
+        <item>Хабаровск</item>
+    </string-array>
+</resources>
