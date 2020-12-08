@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="40dp">
+
+    <RelativeLayout
+        android:id="@+id/Part1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/City"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Город"
+            android:textSize="32dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_below="@+id/City"
+            android:layout_centerHorizontal="true">
+
+            <Spinner
+                android:id="@+id/citiesOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="1"
+                android:minHeight="32dp"
+                android:padding="3dp"
+                android:layout_margin="3dp"
+                android:spinnerMode="dropdown"
+                 />
+
+            <Spinner
+                android:id="@+id/citiesIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="32dp"
+                android:layout_alignParentRight="true"
+                android:padding="3dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                 />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Part2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/Part1">
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Дата"
+            android:textSize="32dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_below="@+id/Date"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="3dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:hint="Туда"
+                android:inputType="datetime"
+                 />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="3dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:hint="Обратно"
+                android:inputType="datetime"
+                 />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Part2">
+        <TextView
+            android:id="@+id/Pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Пассажиры"
+            android:textSize="32dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Pass"
+            android:layout_marginTop="8dp"
+            android:layout_weight="0">
+
+            <RelativeLayout
+                android:id="@+id/passi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_weight="0"
+                >
+
+                <TextView
+                    android:id="@+id/Adults"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:layout_margin="3dp"
+                    android:text="Взрослые"
+                    android:textSize="24dp"
+                     />
+                <TextView
+                    android:id="@+id/Kids"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:layout_margin="3dp"
+                    android:layout_below="@+id/Adults"
+                    android:layout_weight="1"
+                    android:text="Дети"
+                    android:textSize="24dp"
+                     />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:layout_margin="3dp"
+                    android:layout_below="@+id/Kids"
+                    android:layout_weight="1"
+                    android:text="Младенцы"
+                    android:textSize="24dp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="0"
+                >
+
+                <EditText
+                    android:id="@+id/One"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textSize="24dp"
+                    />
+
+                <EditText
+                    android:id="@+id/Two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:layout_margin="3dp"
+                    android:layout_below="@+id/One"
+                    android:layout_weight="1"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textSize="24dp"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:layout_margin="3dp"
+                    android:layout_below="@+id/Two"
+                    android:layout_weight="1"
+                    android:hint="0"
+                    android:inputType="number"
+                    android:textSize="24dp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:onClick="find"
+            android:text="Поиск" />
+    </RelativeLayout>
+
+</RelativeLayout>
